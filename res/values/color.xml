@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange">#DC6900</color>
+    <color name="tangerine">#EB8C00</color>
+    <color name="red">#FF0000</color>
+    <color name="solidrose">#DB536A</color>
+    <color name="darkgrey">#717073</color>
+    <color name="grey">#A0A0A0</color>
+    <color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	
+	<drawable name="frame">#d3d3c7</drawable>
+	<drawable name="transparent">#00000000</drawable>
+	<drawable name="list_item_selected">#EEEADF</drawable>
+	
+	
+</resources>

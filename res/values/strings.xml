@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GTS</string>
+    <string name="title_activity_detail">GTS</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_search">Search</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="db_name">ittraining</string>
+    <string name="pwd_part_1">BIG</string>
+    <string name="pwd_part_2">Sec</string>
+    <string name="pwd_part_3">ret</string>
+    <string name="title_tab1">Topic</string>
+    <string name="title_tab2">Favorite</string>
+    <string name="title_tab3">Notice</string>
+    <string name="title_tab4">Suggestion</string>
+    <!-- 111<string name="serverip">cnpekappdwv019</string> -->
+    <!-- <string name="serverip">http://10.157.13.154</string> -->
+    <!-- <string name="serverip">https://mobileapps.pwchk.com</string> -->
+    <string name="suggestionurl">https://mobileapps.pwchk.com/GTSPortalService.RestService/Suggestion/</string>
+    <string name="outageurl">https://mobileapps.pwchk.com/GTSPortalService.RestService/outage</string>
+    <string name="gtsserviceserver">https://mobileapps.pwchk.com/GTSPortalService.RestService/api/values</string>
+    <string name="videoserver">https://mobileapps.pwchk.com</string>
+    
+    <string name="most_view">https://mobileapps.pwchk.com/GTSPortalService.RestService/api/values</string>
+    <string name="most_commented">https://mobileapps.pwchk.com/GTSPortalService.RestService/api/values</string>
+    <string name="most_liked">https://mobileapps.pwchk.com/GTSPortalService.RestService/api/values</string>
+    
+    <string name="sso_package_name">com.pwc.sso</string>
+    <string name="sharedUserLabel">sso</string>
+    <string name="videocontenttypecode">1</string>
+    <string name="imagecontenttypecode">2</string>
+    <string name="htmlcontenttypecode">3</string> 
+    <!-- Alert message -->
+    <string name="warning_systemerror">System error, please try again later!</string>
+    <string name="error_unavailable_network">The network is unavailable, please check and try again.</string>
+    <string name="title_activity_video_play">VideoPlayActivity</string>
+    <string name="title_activity_comments">CommentsActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_outage">OutageActivity</string>
+    <string name="title_activity_display_image">DisplayImageActivity</string>
+    <string name="title_activity_suggestion">SuggestionActivity</string>
+    <string name="title_activity_favorite">FavoriteActivity</string>
+    <string name="title_activity_suggestion_list">SuggestionListActivity</string>
+    
+</resources>

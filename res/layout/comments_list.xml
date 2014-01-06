@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+	        android:id="@+id/staffname"
+	        android:layout_width="wrap_content"
+	        style="@style/textview_regular_details_bold"
+	        android:layout_height="wrap_content"/>
+	    <TextView
+	        android:id="@+id/createddate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="5dp"
+	        android:layout_toRightOf="@id/staffname"
+	        style="@style/textview_regular_details_bold"/>
+	    <TextView
+	        android:id="@+id/comments"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/staffname"
+	        style="@style/textview_regular"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CommentsActivity" >
+    <LinearLayout
+        android:focusable="true" android:focusableInTouchMode="true"
+        android:layout_width="0px" android:layout_height="0px"/>
+    <TextView 
+        android:id="@+id/tvComments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Comments"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/etleavecomment"
+        android:gravity="left|top"
+        android:inputType="textMultiLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tvComments"
+        android:layout_below="@id/tvComments"
+        android:hint="Leave a comment..."
+        android:layout_marginRight="5dp"
+        android:lines="5"/>
+    <Button
+        android:id="@+id/btnpost"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:layout_below="@id/etleavecomment"
+        android:layout_alignRight="@id/etleavecomment"
+        android:text="Post"
+        android:layout_marginTop="2dp"/>
+    <ListView
+        android:id="@+id/listview_comments"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:divider="@color/orange"
+        android:dividerHeight="1dp"
+        android:fastScrollEnabled="true"
+        android:layout_below="@id/btnpost"
+        android:layout_alignLeft="@id/tvComments"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbarStyle="outsideOverlay" >
+    </ListView>
+    
+    <ProgressBar
+  	    	android:id="@+id/progress"
+           	style="?android:attr/progressBarStyleLarge"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:layout_centerInParent="true"
+           	android:visibility="gone"/>
+</RelativeLayout>

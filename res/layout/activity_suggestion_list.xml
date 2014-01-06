@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuggestionListActivity"
+    android:background="@color/white" >
+    
+     <RelativeLayout
+        android:id="@+id/lltitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:background="@color/white"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:focusable="true" 
+		android:focusableInTouchMode="true"
+		android:paddingTop="5dp">
+	    <TextView
+	        android:id="@+id/text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="Suggestion"
+	        android:textSize="20sp"/>
+	    <ImageButton 
+	        android:id="@+id/leavesuggestion"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:background="@drawable/comment"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"/>"
+     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlwebview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/grey"
+        android:layout_below="@id/lltitle">
+	    <WebView
+	        android:id="@+id/suggestionview"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"/> 
+	    <ProgressBar
+	  	    	android:id="@+id/progress"
+	           	style="?android:attr/progressBarStyleLarge"
+	           	android:layout_width="wrap_content"
+	           	android:layout_height="wrap_content"
+	           	android:layout_centerInParent="true"
+	           	android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

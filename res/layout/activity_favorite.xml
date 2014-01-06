@@ -1,0 +1,47 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    tools:context=".NewsActivity"
+    android:overScrollMode="always">
+    <LinearLayout
+        android:id="@+id/lltitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white"
+	    android:gravity="center_vertical"
+	    android:orientation="horizontal"
+	    android:focusable="true" 
+		android:focusableInTouchMode="true"
+		android:paddingTop="5dp"
+		android:paddingBottom="5dp">
+	    <TextView
+	        android:id="@+id/text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:text="Favorite"
+	        android:textSize="20sp"/> 
+	</LinearLayout>
+  
+    <com.pwc.ittraining.PullToRefreshListView
+        android:id="@+id/listview_learning"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    	android:layout_below="@id/lltitle"
+        android:divider="@color/orange"
+        android:dividerHeight="1dp"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="outsideOverlay" >
+    </com.pwc.ittraining.PullToRefreshListView>
+    
+	<ProgressBar
+        android:id="@+id/status"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>
